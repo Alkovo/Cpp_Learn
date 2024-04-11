@@ -49,8 +49,16 @@ void test_01()
 	printFunc(charArry, num);
 }
 
+void test_02()
+{
+	int intArry[] = {7,6,5,4,3,2,1};
+	int num = sizeof(intArry) / sizeof(int);
+	sortFunc(intArry, num);
+	printFunc(intArry, num);
+
 int main()
 {
 	test_01();
+	test_02();
 	system("pause");
 }
